@@ -6,16 +6,15 @@
 
 const EDUCATION = [
   {
-    date: "2024 — Present",
-    title: "M.S. in Computer Science",
-    subtitle: "Your University",
+    date: "2026 — Present",
+    title: "M.S. in Computer Science - AI track",
+    subtitle: "Georgia Institute of Technology",
     desc: "Focus area, thesis topic, or relevant coursework goes here."
   },
   {
-    date: "2018 — 2022",
-    title: "B.S. in Computer Science",
-    subtitle: "Your University",
-    desc: "GPA, honors, relevant coursework, or activities go here."
+    date: "2019 — 2023",
+    title: "B.S. in Electrical and Computer Engineering",
+    subtitle: "University of Texas at Austin"
   }
 ];
 
