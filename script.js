@@ -21,23 +21,42 @@ const EDUCATION = [
 
 const EXPERIENCE = [
   {
-    date: "2023 — Present",
+    date: "2025 — Present",
     title: "Software Engineer",
-    subtitle: "Company Name",
+    subtitle: "CVS Health",
     bullets: [
       "One or two lines about a concrete thing you built or shipped.",
       "Another achievement, ideally with a number or measurable outcome."
     ]
   },
   {
-    date: "2022 — 2023",
-    title: "Software Engineer Intern",
-    subtitle: "Company Name",
+    date: "2024 — 2025",
+    title: "Software Engineer",
+    subtitle: "DataAnnotation",
+    bullets: [
+      "What you worked on and the impact it had.",
+      "Tools or stack you used, if relevant."
+    ]
+  },
+   {
+    date: "2024 — 2025",
+    title: "Software Engineering Intern",
+    subtitle: "Amazon",
+    bullets: [
+      "What you worked on and the impact it had.",
+      "Tools or stack you used, if relevant."
+    ]
+  },
+   {
+    date: "2024 — 2025",
+    title: "Software Engineer",
+    subtitle: "Ericsson",
     bullets: [
       "What you worked on and the impact it had.",
       "Tools or stack you used, if relevant."
     ]
   }
+   
 ];
 
 const PROJECTS = [
