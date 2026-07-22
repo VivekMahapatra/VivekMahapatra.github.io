@@ -38,7 +38,7 @@ const EXPERIENCE = [
     ]
   },
    {
-    date: "2024 — 2025",
+    date: "2022",
     title: "Software Engineering Intern",
     subtitle: "Amazon",
     bullets: [
@@ -47,7 +47,7 @@ const EXPERIENCE = [
     ]
   },
    {
-    date: "2024 — 2025",
+    date: "2021",
     title: "Software Engineer",
     subtitle: "Ericsson",
     bullets: [
@@ -60,10 +60,10 @@ const EXPERIENCE = [
 
 const PROJECTS = [
   {
-    title: "Project Name",
-    desc: "One or two sentences on what this project does and why you built it.",
-    tags: ["Python", "FastAPI", "Docker"],
-    link: "https://github.com/yourname/project-one"
+    title: "Jobert",
+    desc: "TO BE DEVELOPDED - This webapp aims to help Software Engineers through the job hunting process. It creates reminders for users to follow up with recruiters, creates reminders for users to apply to x amount of jobs per week, and rewards users for completing these tasks",
+    tags: ["Python", "MongoDB"],
+    link: "https://github.com/VivekMahapatra/jobert"
   },
   {
     title: "Another Project",
