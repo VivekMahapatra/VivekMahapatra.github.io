@@ -7,9 +7,9 @@
 const EDUCATION = [
   {
     date: "2026 — Present",
-    title: "M.S. in Computer Science - AI track",
+    title: "M.S. in Computer Science",
     subtitle: "Georgia Institute of Technology",
-    desc: "Focus area, thesis topic, or relevant coursework goes here."
+    desc: "Artificial Intelligence Track"
   },
   {
     date: "2019 — 2023",
