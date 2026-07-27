@@ -7,15 +7,14 @@
 const EDUCATION = [
   {
     date: "2026 — Present",
-    title: "M.S. in Computer Science",
+    title: "M.S. in Computer Science - AI track",
     subtitle: "Georgia Institute of Technology",
-    desc: "Artificial Intelligence Track"
+    desc: "Focus area, thesis topic, or relevant coursework goes here."
   },
   {
     date: "2019 — 2023",
     title: "B.S. in Electrical and Computer Engineering",
-    subtitle: "University of Texas at Austin",
-    desc: "Software Engineering Track
+    subtitle: "University of Texas at Austin"
   }
 ];
 
@@ -25,10 +24,8 @@ const EXPERIENCE = [
     title: "Software Engineer",
     subtitle: "CVS Health",
     bullets: [
-      "Retell AI Prod Support",
-      "HCD Data Archive Migration to GCP",
-      "Compensation Eligibility Engine",
-      "Network Drive Data Procurement"
+      "One or two lines about a concrete thing you built or shipped.",
+      "Another achievement, ideally with a number or measurable outcome."
     ]
   },
   {
@@ -36,7 +33,8 @@ const EXPERIENCE = [
     title: "Software Engineer",
     subtitle: "DataAnnotation",
     bullets: [
-      "Trained 80 LLMs"
+      "What you worked on and the impact it had.",
+      "Tools or stack you used, if relevant."
     ]
   },
    {
@@ -44,7 +42,8 @@ const EXPERIENCE = [
     title: "Software Engineering Intern",
     subtitle: "Amazon",
     bullets: [
-      "Drone certificate data retrieval tool"
+      "What you worked on and the impact it had.",
+      "Tools or stack you used, if relevant."
     ]
   },
    {
@@ -52,7 +51,8 @@ const EXPERIENCE = [
     title: "Software Engineer",
     subtitle: "Ericsson",
     bullets: [
-      "Cell Tower Data retrieval tool"
+      "What you worked on and the impact it had.",
+      "Tools or stack you used, if relevant."
     ]
   }
    
@@ -61,14 +61,20 @@ const EXPERIENCE = [
 const PROJECTS = [
   {
     title: "Jobert",
-    desc: "TO BE DEVELOPED - This webapp aims to help Software Engineers through the job hunting process. It creates reminders for users to follow up with recruiters, creates reminders for users to apply to x amount of jobs per week, and rewards users for completing these tasks",
+    desc: "TO BE DEVELOPDED - This webapp aims to help Software Engineers through the job hunting process. It creates reminders for users to follow up with recruiters, creates reminders for users to apply to x amount of jobs per week, and rewards users for completing these tasks",
     tags: ["Python", "MongoDB"],
     link: "https://github.com/VivekMahapatra/jobert"
   },
   {
-    title: "SideQwest",
-    desc: "TO BE DEVELOPED - This webapp aims to help people find activities near them to do if they have only 30 minutes to 1 hour of time.",
-    tags: ["ReactJS", "NodeJS","MongoDB"],
+    title: "Another Project",
+    desc: "What it does, the problem it solves, and anything notable about how it's built.",
+    tags: ["TypeScript", "React"],
+    link: "https://github.com/yourname/project-two"
+  },
+  {
+    title: "Third Project",
+    desc: "Short description. Keep these tight — a sentence or two reads best.",
+    tags: ["Go", "CLI"],
     link: "https://github.com/yourname/project-three"
   }
 ];
