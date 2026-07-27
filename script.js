@@ -14,7 +14,8 @@ const EDUCATION = [
   {
     date: "2019 — 2023",
     title: "B.S. in Electrical and Computer Engineering",
-    subtitle: "University of Texas at Austin"
+    subtitle: "University of Texas at Austin",
+    desc: "Software Engineering Track"
   }
 ];
 
