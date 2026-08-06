@@ -25,8 +25,9 @@ const EXPERIENCE = [
     title: "Software Engineer",
     subtitle: "CVS Health",
     bullets: [
-      "One or two lines about a concrete thing you built or shipped.",
-      "Another achievement, ideally with a number or measurable outcome."
+      "- Retell AI Integration",
+      "- Compengine Eligibility Engine",
+      "- Data Archival ETL pipelines"
     ]
   },
   {
@@ -34,8 +35,7 @@ const EXPERIENCE = [
     title: "Software Engineer",
     subtitle: "DataAnnotation",
     bullets: [
-      "What you worked on and the impact it had.",
-      "Tools or stack you used, if relevant."
+      "- LLM tuning"
     ]
   },
    {
@@ -43,8 +43,7 @@ const EXPERIENCE = [
     title: "Software Engineering Intern",
     subtitle: "Amazon",
     bullets: [
-      "What you worked on and the impact it had.",
-      "Tools or stack you used, if relevant."
+      "- Drone Certificate Renewal Tool"
     ]
   },
    {
@@ -52,8 +51,7 @@ const EXPERIENCE = [
     title: "Software Engineer",
     subtitle: "Ericsson",
     bullets: [
-      "What you worked on and the impact it had.",
-      "Tools or stack you used, if relevant."
+      "- Cell Tower data extraction Tool"
     ]
   }
    
