@@ -62,21 +62,15 @@ const EXPERIENCE = [
 const PROJECTS = [
   {
     title: "Jobert",
-    desc: "TO BE DEVELOPDED - This webapp aims to help Software Engineers through the job hunting process. It creates reminders for users to follow up with recruiters, creates reminders for users to apply to x amount of jobs per week, and rewards users for completing these tasks",
+    desc: "IN DEVELOPMENT - This webapp aims to help Software Engineers through the job hunting process. It creates reminders for users to follow up with recruiters, creates reminders for users to apply to x amount of jobs per week, and rewards users for completing these tasks",
     tags: ["Python", "MongoDB"],
     link: "https://github.com/VivekMahapatra/jobert"
   },
   {
-    title: "Another Project",
-    desc: "What it does, the problem it solves, and anything notable about how it's built.",
+    title: "SideQwest",
+    desc: "TO BE DEVELOPED - Have you ever had to wait on somone or something and didn't have enough time to do something but enough time to get bored? SideQwest is a webapp that finds activities near you that'll keep you occupied for however long you may be waiting. Simply enter how much time you have, answer some questions, and SideQwest will find things for you to do in that time frame.",
     tags: ["TypeScript", "React"],
-    link: "https://github.com/yourname/project-two"
-  },
-  {
-    title: "Third Project",
-    desc: "Short description. Keep these tight — a sentence or two reads best.",
-    tags: ["Go", "CLI"],
-    link: "https://github.com/yourname/project-three"
+    link: "https://github.com/VivekMahapatra/side_qwest"
   }
 ];
 
