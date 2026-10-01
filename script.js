@@ -72,6 +72,59 @@ const PROJECTS = [
   }
 ];
 
+const dev = n => `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${n}/${n}-original.svg`;
+
+const SQL_ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f29111' stroke-width='1.6' stroke-linecap='round'%3E%3Cellipse cx='12' cy='5.5' rx='7' ry='2.8'/%3E%3Cpath d='M5 5.5v6.5c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8V5.5M5 12v6.5c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8V12'/%3E%3C/svg%3E";
+
+const SKILLS = [
+  {
+    group: "languages",
+    items: [
+      { name: "Python", icon: dev("python") },
+      { name: "Java", icon: dev("java") },
+      { name: "C", icon: dev("c") },
+      { name: "C++", icon: dev("cplusplus") },
+      { name: "C#", icon: dev("csharp") },
+      { name: "JavaScript", icon: dev("javascript") },
+      { name: "TypeScript", icon: dev("typescript") },
+      { name: "SQL", icon: SQL_ICON },
+      { name: "HTML", icon: dev("html5") },
+      { name: "JSON", icon: "https://cdn.simpleicons.org/json/000000" }
+    ]
+  },
+  {
+    group: "cloud & devops",
+    items: [
+      { name: "Linux", icon: dev("linux") },
+      { name: "Azure", icon: dev("azure") },
+      { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+      { name: "GCP", icon: dev("googlecloud") },
+      { name: "Docker", icon: dev("docker") },
+      { name: "Kubernetes", icon: dev("kubernetes") },
+      { name: "GitHub", icon: dev("github") },
+      { name: "Bitbucket", icon: dev("bitbucket") }
+    ]
+  },
+  {
+    group: "data & ai",
+    items: [
+      { name: "Pandas", icon: dev("pandas") },
+      { name: "Scikit-Learn", icon: dev("scikitlearn") },
+      { name: "PySpark", icon: dev("apachespark") },
+      { name: "Hugging Face", icon: "https://cdn.simpleicons.org/huggingface" },
+      { name: "MongoDB", icon: dev("mongodb") }
+    ]
+  },
+  {
+    group: "frameworks",
+    items: [
+      { name: "AngularJS", icon: dev("angularjs") },
+      { name: "ReactJS", icon: dev("react") },
+      { name: "NodeJS", icon: dev("nodejs") }
+    ]
+  }
+];
+
 /* =========================================================
    RENDERING — you shouldn't need to edit below this line
    ========================================================= */
