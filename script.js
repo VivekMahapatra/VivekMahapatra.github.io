@@ -179,11 +179,7 @@ function renderSkills() {
 renderTimeline("educationList", EDUCATION, false);
 renderTimeline("experienceList", EXPERIENCE, true);
 renderProjects();
-renderSkills();   // <-- add this line
-
-renderTimeline("educationList", EDUCATION, false);
-renderTimeline("experienceList", EXPERIENCE, true);
-renderProjects();
+renderSkills();
 
 /* =========================================================
    MOBILE NAV TOGGLE
