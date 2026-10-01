@@ -924,63 +924,12 @@ section, header, footer {
   }
 }
 
-/* =========================================================
-   SKILLS
-   ========================================================= */
-.skills {
-  display: grid;
-  gap: 36px;
-}
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <p class="eyebrow">$ ls ./skills</p>
+  <h2 class="section__title">Skills</h2>
 
-.skills__label {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: var(--text-muted);
-  margin: 0 0 14px 0;
-}
-
-.skills__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
-  gap: 12px;
-}
-
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 16px 8px;
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.skill img,
-.skill svg {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.skill span {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  text-align: center;
-}
-
-.skill:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent);
-  box-shadow: 0 6px 18px rgba(22, 22, 29, 0.08);
-}
-
-@media (max-width: 480px) {
-  .skills__grid {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  }
-}
+  <div class="skills" id="skillsList">
+    <!-- populated by script.js from the SKILLS array -->
+  </div>
+</section>
