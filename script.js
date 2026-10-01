@@ -25,9 +25,9 @@ const EXPERIENCE = [
     title: "Software Engineer",
     subtitle: "CVS Health",
     bullets: [
-      "- Retell AI Integration",
-      "- Compengine Eligibility Engine",
-      "- Data Archival ETL pipelines"
+      "Retell AI Integration",
+      "Compengine Eligibility Engine",
+      "Data Archival ETL pipelines"
     ]
   },
   {
@@ -35,7 +35,7 @@ const EXPERIENCE = [
     title: "Software Engineer",
     subtitle: "DataAnnotation",
     bullets: [
-      "- LLM tuning"
+      "LLM tuning"
     ]
   },
    {
@@ -43,7 +43,7 @@ const EXPERIENCE = [
     title: "Software Engineering Intern",
     subtitle: "Amazon",
     bullets: [
-      "- Drone Certificate Renewal Tool"
+      "Drone Certificate Renewal Tool"
     ]
   },
    {
@@ -51,7 +51,7 @@ const EXPERIENCE = [
     title: "Software Engineer",
     subtitle: "Ericsson",
     bullets: [
-      "- Cell Tower data extraction Tool"
+      "Cell Tower data extraction Tool"
     ]
   }
    
