@@ -464,29 +464,17 @@ section, header, footer {
 /* =========================================================
    SKILLS
    ========================================================= */
-.skills {
+.skills .skills__grid {
   display: grid;
-  gap: 40px;
+  grid-template-columns: repeat(auto-fill, 60px);
+  gap: 14px;
+  justify-content: start;
 }
 
-.skills__label {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: var(--text-muted);
-  margin: 0 0 18px 0;
-}
-
-.skills__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 88px);
-  gap: 20px;
-}
-
-.skill {
+.skills .skill {
   position: relative;
-  width: 88px;
-  height: 88px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -499,22 +487,24 @@ section, header, footer {
               box-shadow 0.2s ease;
 }
 
-.skill img {
-  width: 44px;
-  height: 44px;
+.skills .skill img {
+  width: 28px;
+  height: 28px;
+  max-width: 28px;
   object-fit: contain;
 }
 
-.skill:hover,
-.skill:focus-visible {
-  transform: scale(1.22) translateY(-4px);
+.skills .skill:hover,
+.skills .skill:focus-visible {
+  transform: scale(1.25) translateY(-3px);
   border-color: var(--accent);
-  box-shadow: 0 10px 24px rgba(22, 22, 29, 0.14);
+  box-shadow: 0 8px 20px rgba(22, 22, 29, 0.14);
   z-index: 5;
 }
 
-/* name tooltip */
-.skill__name {
+/* hover name tooltip (text comes from data-name) */
+.skills .skill::after {
+  content: attr(data-name);
   position: absolute;
   bottom: calc(100% + 6px);
   left: 50%;
@@ -531,17 +521,14 @@ section, header, footer {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.skill:hover .skill__name,
-.skill:focus-visible .skill__name {
+.skills .skill:hover::after,
+.skills .skill:focus-visible::after {
   opacity: 1;
   transform: translate(-50%, 0);
 }
 
 @media (max-width: 480px) {
-  .skills__grid {
-    grid-template-columns: repeat(auto-fill, 72px);
-    gap: 16px;
-  }
-  .skill { width: 72px; height: 72px; }
-  .skill img { width: 36px; height: 36px; }
+  .skills .skills__grid { grid-template-columns: repeat(auto-fill, 52px); gap: 12px; }
+  .skills .skill { width: 52px; height: 52px; }
+  .skills .skill img { width: 24px; height: 24px; }
 }
