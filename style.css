@@ -465,10 +465,10 @@ section, header, footer {
    SKILLS
    ========================================================= */
 .skills .skills__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 60px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 14px;
-  justify-content: start;
 }
 
 .skills .skill {
@@ -528,7 +528,7 @@ section, header, footer {
 }
 
 @media (max-width: 480px) {
-  .skills .skills__grid { grid-template-columns: repeat(auto-fill, 52px); gap: 12px; }
+  .skills .skills__grid { gap: 12px; }
   .skills .skill { width: 52px; height: 52px; }
   .skills .skill img { width: 24px; height: 24px; }
 }
