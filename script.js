@@ -113,6 +113,7 @@ const SKILLS = [
       { name: "Scikit-Learn", icon: dev("scikitlearn") },
       { name: "PySpark", icon: dev("apachespark") },
       { name: "Hugging Face", icon: "https://cdn.simpleicons.org/huggingface" },
+      { name: "Claude", icon: "https://cdn.simpleicons.org/claude" },
       { name: "MongoDB", icon: dev("mongodb") }
     ]
   },
