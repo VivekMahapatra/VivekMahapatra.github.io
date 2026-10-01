@@ -74,7 +74,8 @@ const PROJECTS = [
 
 const dev = n => `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${n}/${n}-original.svg`;
 
-const SQL_ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f29111' stroke-width='1.6' stroke-linecap='round'%3E%3Cellipse cx='12' cy='5.5' rx='7' ry='2.8'/%3E%3Cpath d='M5 5.5v6.5c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8V5.5M5 12v6.5c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8V12'/%3E%3C/svg%3E";
+const SQL_ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f29111' stroke-width='1.6' stroke-linecap='round'%3E%3Cellipse cx='12' cy='5.5' rx='7' ry='2.8'/%3E%3Cpath d='M5 5.5v6.5c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8V5.5M5 12v6.5c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8V12'/%3E%3C/svg%3E";
+const JSON_ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2316161D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 4C6 4 7.5 9 5 12c2.5 3 1 8 4 8M15 4c3 0 1.5 5 4 8-2.5 3-1 8-4 8'/%3E%3C/svg%3E";
 
 const SKILLS = [
   {
@@ -89,7 +90,7 @@ const SKILLS = [
       { name: "TypeScript", icon: dev("typescript") },
       { name: "SQL", icon: SQL_ICON },
       { name: "HTML", icon: dev("html5") },
-      { name: "JSON", icon: "https://cdn.simpleicons.org/json/000000" }
+      { name: "JSON", icon: JSON_ICON }
     ]
   },
   {
@@ -163,19 +164,16 @@ function renderProjects() {
 
 function renderSkills() {
   const container = document.getElementById("skillsList");
-  container.innerHTML = SKILLS.map(g => `
-    <div class="skills__group">
-      <h3 class="skills__label">// ${g.group}</h3>
-      <div class="skills__grid">
-        ${g.items.map(s => `
-          <div class="skill" tabindex="0">
-            <img src="${s.icon}" alt="${s.name}" loading="lazy">
-            <span class="skill__name">${s.name}</span>
-          </div>
-        `).join("")}
-      </div>
+  const all = SKILLS.flatMap(g => g.items);
+  container.innerHTML = `
+    <div class="skills__grid">
+      ${all.map(s => `
+        <div class="skill" data-name="${s.name}" tabindex="0">
+          <img src="${s.icon}" alt="${s.name}" loading="lazy">
+        </div>
+      `).join("")}
     </div>
-  `).join("");
+  `;
 }
 
 renderTimeline("educationList", EDUCATION, false);
