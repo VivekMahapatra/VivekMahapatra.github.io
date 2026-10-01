@@ -161,6 +161,28 @@ function renderProjects() {
   `).join("");
 }
 
+function renderSkills() {
+  const container = document.getElementById("skillsList");
+  container.innerHTML = SKILLS.map(g => `
+    <div class="skills__group">
+      <h3 class="skills__label">// ${g.group}</h3>
+      <div class="skills__grid">
+        ${g.items.map(s => `
+          <div class="skill" tabindex="0">
+            <img src="${s.icon}" alt="${s.name}" loading="lazy">
+            <span class="skill__name">${s.name}</span>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  `).join("");
+}
+
+renderTimeline("educationList", EDUCATION, false);
+renderTimeline("experienceList", EXPERIENCE, true);
+renderProjects();
+renderSkills();   // <-- add this line
+
 renderTimeline("educationList", EDUCATION, false);
 renderTimeline("experienceList", EXPERIENCE, true);
 renderProjects();
